@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg , #0a0a0a , #3a4452);
+}
+#calc{
+    font-family: arial , sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+display::placeholder{
+    color: #ffffff;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.op-btn{
+    color: rgb(0, 110, 255);
+}
+.op-btn:hover{
+    background-color: hsl(202, 91%, 70%);
+}
+.op-btn:active{
+    background-color: hsl(202, 80%, 60%);
+}
+.eql-btn{
+    background-color: #fb7c14;
+}
+.eql-btn:hover{
+    background-color: hsl(32, 87%, 73%);
+}
+.eql-btn:active{
+    background-color: hsl(38, 75%, 58%);
+}
